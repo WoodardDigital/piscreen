@@ -1,0 +1,18 @@
+# /lib/systemd/system/kiosk.service   
+
+[Unit]
+Description=Chromium Kiosk
+Wants=graphical.target
+After=graphical.target
+
+[Service]
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/$user/.Xauthority
+Type=simple
+ExecStart=/bin/bash /home/screen/kiosk.sh
+Restart=on-abort
+User=screen
+Group=screen
+
+[Install]
+WantedBy=graphical.target
