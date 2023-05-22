@@ -10,3 +10,7 @@ Dependencies
 This a out of the box Pi4 running a generic 64 Bit Pi OS. 
 
 The 2 main parts of this are the Service file and the kiosk file. The kiosk file is left in the user's home directory for convenience. 
+
+ROADMAP
+
+- Create an install script that will allow you to clone this locally, run installer and it will prompt you to do the needful. 
